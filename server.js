@@ -4,7 +4,7 @@ var moment = require("moment");
 var path = require("path");
 var app = express();
 
-app.use(express.static());
+
 app.use(express.static(path.join(__dirname, 'views')));
 
 
@@ -35,7 +35,9 @@ app.use(express.static(path.join(__dirname, 'views')));
 });*/
 
 
-app.listen(process.env.PORT || 8080, function(){
-    
+app.listen(process.env.PORT || 8080, function(err){
+    if(err){
+        throw err;
+    }
     console.log("listening");
 });
