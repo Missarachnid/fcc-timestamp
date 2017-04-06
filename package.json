@@ -9,12 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Missarachnid/fcc-timestamp-microservice.git"
+    "url": "git+https://github.com/Missarachnid/fcc-timestamp.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Missarachnid/fcc-timestamp-microservice/issues"
+    "url": "https://github.com/Missarachnid/fcc-timestamp/issues"
   },
-  "homepage": "https://github.com/Missarachnid/fcc-timestamp-microservice#readme"
+  "homepage": "https://github.com/Missarachnid/fcc-timestamp#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "pug": "^2.0.0-beta11"
+  }
 }
