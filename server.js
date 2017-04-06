@@ -5,7 +5,7 @@ var path = require("path");
 var app = express();
 
 
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.resolve(__dirname, 'views')));
 
 
 /*app.get("/", function(req, res){
