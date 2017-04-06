@@ -11,7 +11,7 @@ app.get("/", function(req, res){
 });
 
 
-app.get("/dateinfo/:dateInput", function(req, res){
+/*app.get("/dateinfo/:dateInput", function(req, res){
     var data = req.params.dateInput;
     
     
@@ -29,8 +29,8 @@ app.get("/dateinfo/:dateInput", function(req, res){
         naturalDate = moment.unix(data).format("MMMM D, YYYY");
         
     }
-    res.json({"unix": + unixDate, "natural": naturalDate});
-});
+    //res.json({"unix": + unixDate, "natural": naturalDate});
+});*/
 
 
 app.listen(process.env.PORT || 8080, function(){
