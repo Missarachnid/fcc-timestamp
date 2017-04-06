@@ -4,11 +4,13 @@ var moment = require("moment");
 var path = require("path");
 var app = express();
 
-app.use(express.static('index.html'));
+app.use(express.static());
+app.use(express.static(path.join(__dirname, 'views')));
 
-app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname + 'index.html'));
-});
+
+/*app.get("/", function(req, res){
+    res.sendFile(path.join(__dirname + '/index.html'));
+});*/
 
 
 /*app.get("/dateinfo/:dateInput", function(req, res){
