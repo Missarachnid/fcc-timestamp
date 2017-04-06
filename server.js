@@ -4,7 +4,7 @@ var moment = require("moment");
 var app = express();
 
 
-app.get("/dateinfo/:dateInput", function(req, res, next){
+app.get("/dateinfo/:dateInput", function(req, res){
     var data = req.params.dateInput;
     
     
